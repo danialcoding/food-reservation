@@ -1,0 +1,17 @@
+node api.js add_std 40031073 ce 030626 danial faraji 1000
+
+node api.js remove_std 40031073
+
+node api.js charge_std_balance 40031073 100
+
+
+node api.js add_new_food ghormesabzi D 75 50
+
+node api.js remove_food ghormesabzi
+
+
+node api.js reserve_food 40031073 1
+
+node api.js remove_reservation 40031073 1
+
+node api.js change_reservation 40031073 1 2
