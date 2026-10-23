@@ -1,9 +1,10 @@
 {
     "dev": {
       "driver": "pg",
-      "user": "postgres",
-      "password": "KING.d@1382",
-      "host": "localhost",
-      "database": "school"
+      "user": { "ENV": "DB_USER", "default": "postgres" },
+      "password": { "ENV": "DB_PASSWORD" },
+      "host": { "ENV": "DB_HOST", "default": "localhost" },
+      "port": { "ENV": "DB_PORT", "default": 5432 },
+      "database": { "ENV": "DB_NAME", "default": "school" }
     }
   }
